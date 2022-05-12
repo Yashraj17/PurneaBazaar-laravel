@@ -1,0 +1,34 @@
+modules
+
+1. admin panel
+    a. admin can crud products
+    b.admin can Crud category
+    c. admin can manage Orders
+    d. admin can manage payments
+    e. admin can manage Coupons
+    f. admin can man' user
+    g. Admin can manage brands
+2. user panel
+    a. user can place Orders 
+    b. user can register and login self
+    c. user can apply orders 
+    d. user can manage category
+    f. user can modufy profile
+    g. user can make payments online /COD
+
+3. public
+    a. public can filter category wise and search wise products
+    b. public can view products details
+    c. public can register itself and add to category
+
+table schema
+
+1. user (id ,name,contact,dob,password,user_type)
+2.category (id,cat_title,parent_id)
+3. brand (id,brand_title)
+4. product (id,title,category_id,brand_id,image,description,price , discount_price,stock);
+5  coupon (id,code,status,amount)
+6. address (id,street,landmark,pincode,city,state,name,contact,user_id)
+7. order (id,user_id,ordered,coupon_id,address_id,isDelivered,isProcessing,isShipped,Dateofordered)
+8. orderItem (id,order_id,ordered,qty,product_id);
+9. payment (id,order_id,bank_name,type,mode,txn_id,status,dateOfPyament)
